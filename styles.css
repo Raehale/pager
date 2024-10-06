@@ -1,0 +1,117 @@
+/*
+COLOR PALETTE
+
+PAGER BACKGROUND: #283033
+PAGER DISPLAY: #9EC4B3
+PAGER DISPLAY TEXT COLOR: #000000
+
+PHONE BACKGROUND: #D9D9D9
+PHONE DISPLAY: #9EC4B3
+PHONE DISPLAY TEXT COLOR: #F8F8F8
+PHONE KEY: #F8F8F8
+
+RESET AND SEND BUTTON BORDER COLOR: #0B0B0B
+
+RESET BUTTON BACKGROUND: #BE482A
+RESET BUTTON TEXT COLOR: #F8F8F8
+
+SEND BUTTON BACKGROUND: #3D9C7C
+SEND BUTTON TEXT COLOR: #0B0B0B
+*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.communicators-container {
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/***PAGER***/
+.pager-reciever {
+    background-color: #283033;
+    padding: 2rem;
+}
+
+.pager-reciever h1 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.pager-reciever-text {
+    background-color: #9EC4B3;
+    padding: 2rem 0;
+    font-size: 1.75rem;
+}
+
+/***PHONE***/
+.phone {
+    background-color: #D9D9D9;
+    padding: 2rem;
+    margin-top: 5vh;
+}
+
+.phone h1 {
+    font-size: 2rem;
+}
+
+.phone-text {
+    background-color: #444444;
+    padding: 2rem 0;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.dial-buttons {
+    display: grid;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.btn {
+    background-color: #F8F8F8;
+    border: 0;
+    padding: 2rem 1.5rem;
+    font-family: inherit;
+    font-size: 2rem;
+}
+
+.reset-btn {
+    width: 100%;
+    background-color: #BE482A;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.send-btn {
+    width: 100%;
+    background-color: #3D9C7C;
+    border: 1px solid black;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 2rem;
+    font-size: 2rem;
+}
