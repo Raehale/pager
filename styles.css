@@ -91,7 +91,7 @@ html, body {
     margin-top: 1rem;
 }
 
-.btn {
+.dial-btn {
     background-color: #F8F8F8;
     border: 0;
     padding: 1rem 1.5rem;
@@ -99,6 +99,7 @@ html, body {
     font-size: 1.25rem;
     width: 100%;
     margin: auto;
+    cursor: pointer;
 }
 
 .reset-btn {
@@ -122,4 +123,18 @@ html, body {
     text-transform: uppercase;
     padding: 1rem;
     font-size: 1.25rem;
+}
+
+/***/
+.info {
+    background-color: #BE482A;
+    color: white;
+    position: absolute;
+    display: none;
+    font-size: 0.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
