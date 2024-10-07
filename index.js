@@ -1,5 +1,6 @@
 const phoneTextBox = document.getElementById("phoneText");
 const pagerTextBox = document.getElementById("pagerRecieverText");
+const pagerBeeps = new Audio('/assets/527944-Pager_Alarm_06.wav');
 let currentNumber = '';
 
 //generates buttons
@@ -29,6 +30,11 @@ document.getElementById("sendBtn").addEventListener("click", () => {
     phoneTextBox.textContent = '';
     setTimeout(() => {
         pagerTextBox.textContent = currentNumber;
+        pagerBeeps.play();
         currentNumber = '';
     }, 3000);
+
+    setTimeout(() => {
+        pagerTextBox.textContent = '';
+    }, 8000)
 })
