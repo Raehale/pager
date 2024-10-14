@@ -17,7 +17,6 @@ document.getElementById("dialButtons").addEventListener("click", (event) => {
     if (event.target.classList.contains('dial-btn')) {
         if (phoneTextBox.textContent === "SENT" || phoneTextBox.textContent === "SENDING") {
             addInfoText("Wait for message to send.");
-
             disableButtons();
         } else {
             if (currentNumber.length < 10) {
